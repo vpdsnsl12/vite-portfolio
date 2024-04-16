@@ -34,14 +34,13 @@
     font-synthesis: none;
 }
 
-@media screen and(max-width: 768px) {
+@media screen and (max-width: 768px) {
     :root {
         font-size: 14px;
-
     }
+}
 
-    body {
-        color: var(--black);
-        background-color: var(--mainBg-color);
-    }
+body {
+    color: var(--black);
+    background-color: var(--mainBg-color);
 }
