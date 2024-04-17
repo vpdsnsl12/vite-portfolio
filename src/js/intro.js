@@ -8,7 +8,7 @@ export function intro() {
 
 
     gsap.to('.img', {
-        backgroundPosition: (-offsetValue* frameConunt) + 'px',
+        backgroundPosition: (-offsetValue * frameConunt) + 'px',
         ease: 'steps(' + frameConunt + ')',
         scrollTrigger: {
             trigger: '#intro',
