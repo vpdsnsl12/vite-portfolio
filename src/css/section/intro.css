@@ -1,9 +1,9 @@
 #intro {
     height: 100vh;
-    font-family: ;
+    /* font-family: ; */
 }
 
-.intro_inner {
+.intto_inner{
     width: 100%;
     height: 100%;
     display: flex;
@@ -54,15 +54,15 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 197px;
-    height: 337px;
+    width: 358px;
+    height: 202px;
     overflow: hidden;
     /* filter: grayscale(100%); */
     opacity: 0;
-    background: url(../../img/);
+    background: url(../../img/JUHEElego.png);
     background-repeat: no-repeat;
-    background-position: 0 center;
-    background-size: contain;
+    /* background-position: 0 center;
+    background-size: contain; */
 }
 
 .intro_text:hover .text {
@@ -72,7 +72,7 @@
 
 .intro_text:hover .img {
     opacity: 1;
-    filter: grayscale();
+    /* filter: grayscale(1); */
 }
 
 .intro_lines {
