@@ -1,8 +1,8 @@
 :root {
     /* 메인영어 폰트 */
-    --mainEng-font:
-        /* 메인한글 폰트 */
-        --mainKor-font:;
+    --mainEng-font: ;
+    /* 메인한글 폰트 */
+    --mainKor-font: ;
     /* 메인넘버 폰트 */
     --mainNum-font: ;
     /* 메인bg color */
