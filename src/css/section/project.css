@@ -19,6 +19,7 @@ body {
     color: var(--black100);
     border-bottom: .4vw solid var(--black100);
     margin-bottom: 100px;
+    font-weight: 700;
 }
 
 .pf_title em {
