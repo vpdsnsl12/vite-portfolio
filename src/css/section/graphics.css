@@ -1,0 +1,160 @@
+.graph_inner {
+    padding: 16px;
+    background-color: var(--black);
+}
+
+.graph_title em {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 2;
+}
+
+.graph_title {
+    position: sticky;
+    top: 70px;
+    left: 0;
+    width: 50%;
+    height: 5vw;
+    font-size: 4vw;
+    line-height: 1.6;
+    font-family: var(--mainKor-font);
+    text-transform: uppercase;
+    color: var(--white);
+    border-bottom: .4vw solid var(--white);
+    margin-bottom: 100px;
+    font-weight: 700;
+    z-index: 999;
+}
+
+.graphics_wrap {
+    width: 80%;
+    margin: auto;
+}
+
+.graphics_wrap img {
+    /* filter: brightness(50%); */
+    width: 100%;
+    /* transition: .35s;
+    cursor: pointer; */
+    /* 모달박스 만들려면 a로 싸야함. 이건 그냥 임시방편 */
+}
+/* .graphics_wrap .img_box:hover img {
+    filter: brightness(100%);
+} */
+
+.graphics_wrap .stage1 .inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.graphics_wrap .stage1 .img_box {
+    width: 60%;
+}
+
+.graphics_wrap .stage1 .img_text {
+    width: 35%;
+}
+
+.graphics_wrap .stage1 .img_text h3 {
+    color: var(--white);
+    font-weight: 800;
+    font-size: 4vw;
+    margin-bottom: 20px;
+    color: yellow;
+}
+
+.graphics_wrap .stage1 .img_text p {
+    line-height: 1.6;
+    color: var(--white);
+}
+
+.graphics_wrap .stage2 {
+    padding: 10% 0;
+}
+
+.graphics_wrap .stage2 ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 0 50px;
+}
+
+.graphics_wrap .stage2 ul li {
+    width: 28%;
+    margin: 50px 0;
+}
+
+.graphics_wrap .stage2 .img_text {
+    color: var(--white);
+}
+
+.graphics_wrap .stage2 .img_text .title1 {
+    font-size: 3vw;
+    font-weight: 800;
+    margin-bottom: 50px;
+    -webkit-text-stroke: 1px yellow;
+    color: transparent;
+}
+
+.graphics_wrap .stage2 .img_text .title1 {
+    font-size: 1.5vw;
+    padding-top: 50px;
+}
+
+.graphics_wrap .stage2 ul.size li:nth-child(1) {
+    width: 50%;
+    margin-left: 10%;
+}
+
+.graphics_wrap .stage2 .img_text.size {
+    position: relative;
+    margin-top: -100px;
+}
+
+.img_box {
+    position: relative;
+    overflow: hidden;
+    transition: .35s;
+}
+
+.img_box::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgb(176, 203, 235);
+    left: 0;
+    top: 0;
+    z-index: 2;
+    transition: .35s;
+    transition-delay: .35s;
+}
+
+.img_box::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #000;
+    left: 0;
+    top: 0;
+    transition: .35s;
+    z-index: 3;
+}
+
+.img_box.active::before {
+    height: 0;
+}
+.img_box.active::after {
+    height: 0;
+}
+.img_text{
+    position: relative;
+    top: 50px;
+    opacity: 0;
+    transition: .4s;
+}
+.img_text.active{
+    top: 0;
+    opacity: 1;
+}

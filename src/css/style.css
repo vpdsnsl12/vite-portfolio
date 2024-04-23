@@ -12,6 +12,6 @@
 @import url(section/about.css);
 @import url(section/work.css);
 
-#graphics,#about{
+#about{
     height: 100vh;
 }
