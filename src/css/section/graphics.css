@@ -117,7 +117,7 @@
     transition: .35s;
 }
 
-/* .img_box::before {
+.img_box::before {
     content: '';
     width: 100%;
     height: 100%;
@@ -157,4 +157,4 @@
 .img_text.active{
     top: 0;
     opacity: 1;
-} */
+}

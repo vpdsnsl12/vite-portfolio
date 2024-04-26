@@ -1,8 +1,4 @@
 import gsap from 'gsap';
-import ScrollTrigger from 'gsap/ScrollTrigger';
-
-gsap.registerPlugin(ScrollTrigger);
-
 export function graphics() {
     gsap.utils.toArray('.img_box').forEach(function (imgBox) {
         gsap.timeline({ scrollTrigger:{
